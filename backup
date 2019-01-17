@@ -1,0 +1,90 @@
+<!-- marketing artiklar -->
+
+      <div class="articleMarketing">
+
+        <h2>Marketing</h2>
+
+          <a href="https://www.adweek.com/digital/from-boardroom-to-living-room-how-facebooks-many-pr-initiatives-intertwine-to-deliver-its-messaging/">
+            <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/12/zuck-universe-kickout-2018.jpg" alt="Facebooks PR initiatives">
+          </a>
+
+          <h3>From Boardroom to Living Room: How Facebook’s Many PR Initiatives Intertwine to Deliver Its Messaging</h3>
+
+          <h4>By David Cohen | December 27, 2018</h4>
+          <p>The company has an agency in every country where it has a presence</p>
+
+
+          <a href="https://www.adweek.com/brand-marketing/chief-an-exclusive-network-for-powerful-women-in-marketing-and-media-debuts-in-nyc/">
+            <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/Chief_content-2019.png" alt="chief a network">
+          </a>
+
+          <h3>Chief, an Exclusive Network for Powerful Women in Marketing and Media, Debuts in NYC</h3>
+
+          <h4>By Katie Richards | 19 hours ago</h4>
+          <p>Members include execs from brands like Instagram, HBO and Walmart</p>
+
+        </div>
+
+</div>
+
+<!-- //Första raden -->
+
+<p></p>
+
+<!-- Andra raden börjar här -->
+<!-- General class second settings -->
+
+  <div class="articleGeneral">
+<!-- FAANG -->
+  <div class ="articleFaang">
+      <h2>FAANG</h2>
+
+<!-- AD artiklar -->
+      <a href="https://www.adweek.com/brand-marketing/burger-king-trolls-president-trump-plus-how-more-brands-are-responding-to-the-government-shutdown/">
+        <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/bk-hamberders-content-2019.png" alt="Burger king bild">
+      </a>
+
+      <h3>Burger King Trolls President Trump, Plus How More Brands Are Responding to the Government Shutdown</h3>
+        <h4>By Katie Richards | 16 hours ago</h4>
+          <p>Sportswear companies are cleaning up national parks</p>
+
+          <a href="https://www.adweek.com/creativity/for-bud-light-even-announcing-ingredient-and-nutrition-labels-is-a-regal-affair/">
+        <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/bud-light-ingredients-hed-2-2019.jpg" alt="bud light bild">
+      </a>
+
+      <h3>For Bud Light, Even Announcing Ingredient and Nutrition Labels Is a Regal Affair</h3>
+
+      <h4>By Katie Richards | 5 days ago</h4>
+      <p class="dateP">By royal decree, the brewer takes the lead on voluntary disclosure</p>
+
+    </div>
+
+<!--Stocks-->
+
+      <div class="articleStock">
+
+        <h2>Stocks</h2>
+
+          <a href="https://www.adweek.com/digital/from-boardroom-to-living-room-how-facebooks-many-pr-initiatives-intertwine-to-deliver-its-messaging/">
+            <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/12/zuck-universe-kickout-2018.jpg" alt="Facebooks PR initiatives">
+          </a>
+
+          <h3>From Boardroom to Living Room: How Facebook’s Many PR Initiatives Intertwine to Deliver Its Messaging</h3>
+
+          <h4>By David Cohen | December 27, 2018</h4>
+          <p>The company has an agency in every country where it has a presence</p>
+
+
+          <a href="https://www.adweek.com/brand-marketing/chief-an-exclusive-network-for-powerful-women-in-marketing-and-media-debuts-in-nyc/">
+            <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/Chief_content-2019.png" alt="chief a network">
+          </a>
+
+          <h3>Chief, an Exclusive Network for Powerful Women in Marketing and Media, Debuts in NYC</h3>
+
+          <h4>By Katie Richards | 19 hours ago</h4>
+          <p>Members include execs from brands like Instagram, HBO and Walmart</p>
+
+        </div>
+
+
+</div>
