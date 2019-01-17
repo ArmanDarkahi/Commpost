@@ -1,0 +1,114 @@
+body {
+  background-color: #FCFCFC;
+
+}
+
+h1, h2, h3, h4 {
+  font-family: Roboto;
+
+}
+
+h1  {
+  /* color: #9B1D20; */
+  color: #F55D3E;
+  font-size: 60px;
+  font weight: 900;
+  margin-top: 1%;
+  margin-bottom:4%;
+}
+
+h2  {
+  font-size: 42px;
+  font-weight: 900;
+  /* color: #F55D3E; */
+  color: #9B1D20;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+h3  {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+h4  {
+  font-size: 15px;
+  margin-top: 4px;
+
+}
+
+p {
+  font-family: Arial;
+  color: #474747;
+
+}
+
+.dateP {
+
+}
+
+.heroBanner {
+  background-color: #FFCC33;
+  text-align: center;
+  padding: 10px;
+
+
+}
+
+.heroBanner p {
+
+  color: #FCFCFC;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 64px;
+
+}
+
+.introGeneral {
+
+  text-align: justify;
+  margin: 40px;
+  padding: 0px 25%;
+
+
+}
+
+.articleGeneral {
+
+    display: flex;
+      justify-content: space-around;
+}
+
+.articleGeneral img {
+  width: 100%;
+
+
+}
+
+.articleAdvertising {
+  width: 40%;
+  /* background-color: #E6E6E6; */
+  padding: 0px 10px;
+
+  border: 2px solid red;
+  border-radius: 5px;
+  /* border-color: #F55D3E; */
+  border-color: #9B1D20;
+
+}
+
+.articleMarketing{
+
+  width: 40%;
+  padding: 0px 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+  /* border-color: #F55D3E; */
+  border-color: color: #9B1D20;
+}
+
+.campaignLink {
+
+  font-size: 15px;
+}
