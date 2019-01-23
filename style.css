@@ -6,16 +6,11 @@ body {
   background-color: #FCFCFC;
 }
 
-.m {
-color: red;
-}
-
 h1, h2, h3, h4 {
   font-family: Roboto;
 }
 
 h1  {
-  /* color: #9B1D20; */
   color: #F55D3E;
   font-size: 60px;
   font weight: 900;
@@ -26,7 +21,6 @@ h1  {
 h2  {
   font-size: 42px;
   font-weight: 900;
-  /* color: #F55D3E; */
   color: #9B1D20;
   margin-top: 4%;
   margin-bottom: 2%;
@@ -48,7 +42,9 @@ p {
   color: #474747;
 }
 
-
+.m {
+color: red;
+}
 
 .heroBanner {
   background-color: #FFCC33;
@@ -70,9 +66,9 @@ p {
 }
 
 .articleGeneral {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .articleGeneral img {
@@ -90,11 +86,9 @@ p {
 }
 
 .articleAdvertising {
-  /* background-color: #E6E6E6; */
   padding: 0px 10px;
   border: 2px solid red;
   border-radius: 5px;
-  /* border-color: #F55D3E; */
   border-color: #9B1D20;
   box-shadow: 4px 6px #7F181B;
   max-height: 800px;
@@ -105,8 +99,6 @@ p {
   padding: 0px 10px;
   border: 2px solid red;
   border-radius: 5px;
-  /* border-color: #F55D3E; */
-  /* border-color: #9B1D20; */
   border-color: #F28123;
   max-height: 800px;
   overflow: scroll;
@@ -120,12 +112,9 @@ p {
 
 
 .articleFaang {
-  /* background-color: #E6E6E6; */
   padding: 0px 10px;
   border: 2px solid red;
   border-radius: 5px;
-  /* border-color: #F55D3E; */
-  /* border-color: #9B1D20; */
   border-color: #DB504A;
   max-height: 800px;
   overflow: scroll;
@@ -141,7 +130,6 @@ p {
   padding: 0px 10px;
   border: 2px solid red;
   border-radius: 5px;
-  /* border-color: #F55D3E; */
   border-color: #087E8B;
   max-height: 800px;
   overflow: scroll;
@@ -156,7 +144,7 @@ p {
   font-size: 15px;
 }
 
-/* big view */
+/* panorama view */
 @media (min-width: 2000px){
   .article {
     width: 25%;
@@ -171,6 +159,7 @@ p {
     margin-bottom: 5px;
     margin-top: 10px;
   }
+
   p {
     margin-top: 0px;
   }
@@ -179,6 +168,7 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .introGeneral{
     margin-left: 10px;
     margin-right: 10px;
@@ -186,11 +176,10 @@ p {
     padding-right: 10%;
     margin: 5px;
   }
+
   .article {
     width: 45%;
   }
-
-
 }
 
 /* Mobil view */
@@ -214,7 +203,6 @@ p {
 
   p {
     font-size: 13px;
-
   }
 
   .articleGeneral {
@@ -228,7 +216,6 @@ p {
 
   .introGeneral p {
     font-size: 12px;
-
   }
 
   .heroBanner p {
@@ -240,9 +227,8 @@ p {
 
   .article {
     width: 100%;
-
-
   }
+
   .articleAdvertising {
     width: 95%;
     margin-left: auto;
@@ -251,6 +237,7 @@ p {
     max-height: 600px;
     box-shadow: 3px 5px #7F181B;
   }
+
   .articleMarketing {
     width: 95%;
     margin-left: auto;
@@ -258,6 +245,7 @@ p {
     margin-bottom: 10px;
     max-height: 600px;
   }
+
   .articleFaang{
     width: 95%;
     margin-left: auto;
@@ -265,6 +253,7 @@ p {
     margin-bottom: 10px;
     max-height: 600px;
   }
+
   .articleStock {
     width: 95%;
     margin-left: auto;
@@ -272,7 +261,4 @@ p {
     margin-bottom: 10px;
     max-height: 600px;
   }
-
-
-
 }
