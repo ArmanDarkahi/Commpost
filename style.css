@@ -30,6 +30,7 @@ h3  {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 h4  {
@@ -72,7 +73,12 @@ color: red;
 }
 
 .articleGeneral img {
-  width: 100%;
+  width: 80%;
+}
+
+.articleGeneral p {
+  width: 80%
+
 }
 
 .article {
@@ -160,8 +166,9 @@ color: red;
     margin-top: 10px;
   }
 
-  p {
+  .articleGeneral p {
     margin-top: 0px;
+    width: 100%;
   }
 
   .heroBanner p {
@@ -207,6 +214,10 @@ color: red;
 
   .articleGeneral {
     display: block;
+  }
+
+  .articleGeneral p{
+    width: 100%
   }
 
   .introGeneral {
