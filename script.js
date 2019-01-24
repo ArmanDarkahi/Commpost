@@ -23,12 +23,10 @@ articlesAdvertisingArray.forEach(article =>{
   let articlesAdvertisingArray = document.querySelector(".articleAdvertising")
 
   articlesAdvertisingArray.innerHTML += `
-    <h2>${article.image}</h2>
+    <img src="${article.image}" alt="">
     <h3>${article.headline}</h3>
+    <h4>${article.details}</h4>
     <p>${article.body}</p>
   `
-
-  console.log(article.image)
-  console.log(article.subtitle)
 
 })
