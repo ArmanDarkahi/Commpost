@@ -60,6 +60,10 @@ color: red;
   font-size: 64px;
 }
 
+.mobileInfo{
+  display: none;
+}
+
 .introGeneral {
   text-align: justify;
   margin: 40px;
@@ -73,8 +77,9 @@ color: red;
 }
 
 .articleGeneral img {
-  width: 80%;
-}
+  /* width: 80%; */
+  height: 360px;
+  }
 
 .articleGeneral p {
   width: 80%
@@ -154,8 +159,17 @@ color: red;
 @media (min-width: 2000px){
   .article {
     width: 25%;
-    max-height: 2000;
+    height: 2000px;
   }
+
+  }
+
+  .articleGeneral img {
+    /* width: 80%; */
+    width: 100%;
+    }
+
+
 }
 
 
@@ -224,6 +238,10 @@ color: red;
   .introGeneral {
     padding: 0px 0px;
     margin: 20px;
+  }
+
+  .mobileInfo{
+    display: inline;
   }
 
   .introGeneral p {
