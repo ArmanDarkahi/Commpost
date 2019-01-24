@@ -93,25 +93,45 @@ fetch(urlAdvertising)
 
 
     //Stocks
+    let currentPageStocks = 1
 
-    let urlStocks = "https://newsapi.org/v2/everything?q?stocks&language=en&sources=cnbc&sortBy=relevancy&pageSize=10&apiKey=e3ce35f448344649a84499d591b27761"
-    let receivedNewsStocks = (newsDataStocks) => {
+    let fetchNewsStocks = () => {
+      // let urlStocks = `https://newsapi.org/v2/everything?q=stocks&language=en&sources=cnbc&sortBy=relevancy&pageSize=10&page=${currentPageStocks}&apiKey=e3ce35f448344649a84499d591b27761"`
 
-      newsDataStocks.articles.forEach((article) => {
+      let urlStocks = `https://newsapi.org/v2/everything?q=stocks&language=en&sources=cnbc&sortBy=relevancy&pageSize=10&page=${currentPageStocks}&apiKey=e3ce35f448344649a84499d591b27761`
+      let receivedNewsStocks = (newsDataStocks) => {
+        document.querySelector(".articleStockText").innerHTML =''
 
-        // Here we create and add html elements to our html file
-        document.querySelector(".articleStock").innerHTML +=
-          `<div class="news">
-            <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
-            <a href="${article.url}">  <h3>${article.title}</h3></a>
-            <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
-            <p>${article.description}</p>
-          </div>`
+        newsDataStocks.articles.forEach((article) => {
 
-      })
+          // Here we create and add html elements to our html file
+          document.querySelector(".articleStockText").innerHTML +=
+            `<div class="news">
+              <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
+              <a href="${article.url}">  <h3>${article.title}</h3></a>
+              <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
+              <p>${article.description}</p>
+            </div>`
+
+        })
+        //reset scroll to top
+        document.querySelector(".articleStock").scrollTop = 0;
+
+      }
+
+
+      fetch(urlStocks)
+        .then(response => response.json())
+        .then(receivedNewsStocks)
+
     }
 
+    fetchNewsStocks()
 
-    fetch(urlStocks)
-      .then(response => response.json())
-      .then(receivedNewsStocks)
+    let readMoreClick = () => {
+      console.log(1)
+      currentPageStocks += 1
+      fetchNewsStocks()
+    }
+    //Trigger next page
+    document.querySelector(".buttonMoreStocks").onclick = readMoreClick
