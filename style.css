@@ -240,8 +240,10 @@ color: red;
     margin: 20px;
   }
 
+/* Show mobile instructions */
   .mobileInfo{
     display: inline;
+    font-weight: 900;
   }
 
   .introGeneral p {
