@@ -1,3 +1,15 @@
+//sweetscroll
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scroller = new SweetScroll({
+    horizontal: true,
+
+
+  });
+}, false);
+
+
+// Api stuff
 // Our variables
 let url = "https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=relevancy&pageSize=10&apiKey=e3ce35f448344649a84499d591b27761"
 
@@ -15,7 +27,7 @@ let receivedNews = (newsDataAdvertising) => {
       `<div class="news">
         <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
         <a href="${article.url}">  <h3>${article.title}</h3></a>
-        <h4>${article.author} ${article.publishedAt}</h4>
+        <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
         <p>${article.description}</p>
       </div>`
 

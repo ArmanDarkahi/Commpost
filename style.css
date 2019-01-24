@@ -214,6 +214,7 @@ color: red;
 
   .articleGeneral {
     display: block;
+
   }
 
   .articleGeneral p{
@@ -238,6 +239,13 @@ color: red;
 
   .article {
     width: 100%;
+
+  }
+
+/* When in mobile, switch to horizontal scroll */
+  .article-inner {
+    -webkit-column-count: 1;
+
   }
 
   .articleAdvertising {
@@ -247,6 +255,7 @@ color: red;
     margin-bottom: 10px;
     max-height: 600px;
     box-shadow: 3px 5px #7F181B;
+
   }
 
   .articleMarketing {
@@ -272,4 +281,15 @@ color: red;
     margin-bottom: 10px;
     max-height: 600px;
   }
+
+  const scroller = new SweetScroll({/* some options */
+      horizontal: true,
+
+
+
+    }, document.querySelector('articleAdvertising'));
+
+
+
+
 }
