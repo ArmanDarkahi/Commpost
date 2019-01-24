@@ -1,102 +1,34 @@
-//
-// let showAlert = () => {
-//   alert("Alex är seg")
-// }
-//
-// let hideDiv = () => {
-//   document.querySelector(".showDiv").classList.toggle("hideDiv");
-//
-// }
-//
-// let gömTest = () => {
-//   document.querySelector('.showDiv').classList.add("hideDiv")
-//
-// }
-//
-//
-// document.querySelector('.button').onclick=showAlert
-// document.querySelector('.hideButton').onclick=hideDiv
-//
-// document.querySelector(".hideButton").onmouseover = gömTest
 
-
-// let name = "Arman"
-// let lastname = "Darkahi"
-// let fullName = name + " " + lastname
-//
-// let babbel ="     masssa    vitt    aha ha ha       "
-//
-// let siffra1=1
-// let siffra2=2
-//
-// console.log(siffra1+siffra2)
-//
-// document.querySelector(".showDiv").innerHTML = (fullName.toUpperCase())
-// document.querySelector(".showDiv").innerHTML = (fullName.repeat(3999))
-
-
-// let clickCount = 0
-//
-// let incrementCount = () => {
-//   clickCount += 1
-//   document.querySelector(".output").innerHTML = clickCount
-//
-// }
-//
-// document.querySelector(".myButton").onclick = incrementCount
-//
-// let fruits = [ "apple", "orange", "lemon"]
-//
-//   console.log(fruits[2])
-//
-// fruits.forEach (fruitName => {
-//   console.log(fruitName)
-// })
-//
-//
-// let newsTitles = ["Hotet mot handbollens framtid i Stockholm", "jo, placebo funkar – även när man vet att det är fejk", "Vilken version av dig umgås dina vänner med i kväll?"]
-//
-// newsTitles.forEach (nyheter => {
-//   console.log(nyheter)
-//
-// })
-//
-//
-// let articlesDiv = document.querySelector(".demo")
-//
-// newsTitles.push("arman test")
-// newsTitles.forEach(title => {
-//
-//   articlesDiv.innerHTML += `<h2>${title}</h2>`
-// })
-
-
-
-
-let newsArticle = [
+let articlesAdvertisingArray = [
   {
-    title: "Arman är bäst",
-    subtitle: "blah blah",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    image: "https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/bk-hamberders-content-2019.png",
+    link: "https://www.adweek.com/brand-marketing/burger-king-trolls-president-trump-plus-how-more-brands-are-responding-to-the-government-shutdown/",
+    headline: "Burger King Trolls President Trump, Plus How More Brands Are Responding to the Government Shutdown",
+    details: "By Katie Richards | 16 hours ago",
+    body: "Sportswear companies are cleaning up national parks",
+
   },
   {
-    title: "Arman är bäst igen",
-    subtitle: "blah blah again",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    image: "https://static.adweek.com/adweek.com-prod/wp-content/uploads/2019/01/bud-light-ingredients-hed-2-2019.jpg",
+    link: "https://www.adweek.com/creativity/for-bud-light-even-announcing-ingredient-and-nutrition-labels-is-a-regal-affair/",
+    headline: "For Bud Light, Even Announcing Ingredient and Nutrition Labels Is a Regal Affair",
+    details: "By Katie Richards | 5 days ago",
+    body: "By royal decree, the brewer takes the lead on voluntary disclosure",
 
   }
 ]
 
-let articlesDiv = document.querySelector(".demo")
 
-newsArticle.forEach(article =>{
-  articlesDiv.innerHTML += `
-    <h2>${article.title}</h2>
-    <h3>${article.subtitle}</h3>
-    <p>${article.description}</p>
+articlesAdvertisingArray.forEach(article =>{
+  let articlesAdvertisingArray = document.querySelector(".articleAdvertising")
+
+  articlesAdvertisingArray.innerHTML += `
+    <h2>${article.image}</h2>
+    <h3>${article.headline}</h3>
+    <p>${article.body}</p>
   `
 
-  console.log(article.title)
+  console.log(article.image)
   console.log(article.subtitle)
 
 })
