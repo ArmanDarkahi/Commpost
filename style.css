@@ -68,7 +68,7 @@ color: red;
   text-align: justify;
   margin: 40px;
   padding: 0px 25%;
-  
+
 }
 
 .articleGeneral {
@@ -266,6 +266,7 @@ color: red;
 /* When in mobile, switch to horizontal scroll */
   .article-inner {
     -webkit-column-count: 1;
+    -moz-column-count: 1;
 
   }
 
