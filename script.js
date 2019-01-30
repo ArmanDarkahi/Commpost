@@ -8,13 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 }, false);
 
+var oneWeekAgo = new Date();
+oneWeekAgo.setDate(moment().subtract(2, 'days').toISOString());
+
+let dateAlert = () => {
+  alert(moment().subtract(2, 'days').toISOString())
+
+}
+
+window.onload = dateAlert;
 
 // Api stuff
 // Our variables
 // let urlAdvertising = "https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=relevancy&pageSize=10&apiKey=e3ce35f448344649a84499d591b27761"
 let currentPageAdvertising = 1
 let fetchNewsAdvertising = () => {
-  let urlAdvertising = `https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=relevancy&pageSize=10&page=${currentPageAdvertising}&apiKey=e3ce35f448344649a84499d591b27761`
+  let urlAdvertising = `https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=popularity&from=${oneWeekAgo}&pageSize=10&page=${currentPageAdvertising}&apiKey=e3ce35f448344649a84499d591b27761`
   let receivedNewsAdvertising = (newsDataAdvertising) => {
     document.querySelector(".articleAdvertisingText").innerHTML =''
 
