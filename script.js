@@ -8,22 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 }, false);
 
-var oneWeekAgo = new Date();
-oneWeekAgo.setDate(moment().subtract(2, 'days').toISOString());
+let oneWeekAgo = moment().subtract(2, "days").format("YYYY-MM-DD")
 
-let dateAlert = () => {
-  alert(moment().subtract(2, 'days').toISOString())
 
-}
 
-window.onload = dateAlert;
 
 // Api stuff
 // Our variables
 // let urlAdvertising = "https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=relevancy&pageSize=10&apiKey=e3ce35f448344649a84499d591b27761"
 let currentPageAdvertising = 1
 let fetchNewsAdvertising = () => {
-  let urlAdvertising = `https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=popularity&from=${oneWeekAgo}&pageSize=10&page=${currentPageAdvertising}&apiKey=e3ce35f448344649a84499d591b27761`
+  let urlAdvertising = `https://newsapi.org/v2/everything?q=advertising&language=en&sortBy=relevancy&from=${oneWeekAgo}&pageSize=10&page=${currentPageAdvertising}&apiKey=e3ce35f448344649a84499d591b27761`
   let receivedNewsAdvertising = (newsDataAdvertising) => {
     document.querySelector(".articleAdvertisingText").innerHTML =''
 
@@ -62,7 +57,7 @@ document.querySelector(".buttonMoreAdvertising").onclick = readMoreClickAdvertis
   // let urlMarketing = "https://newsapi.org/v2/everything?q=marketing&language=en&sortBy=relevancy&pageSize=10&apiKey=e3ce35f448344649a84499d591b27761"
   let currentPageMarketing = 1
   let fetchNewsMarketing = () => {
-    let urlMarketing = `https://newsapi.org/v2/everything?q=marketing&language=en&sortBy=relevancy&pageSize=10&page=${currentPageMarketing}&apiKey=e3ce35f448344649a84499d591b27761`
+    let urlMarketing = `https://newsapi.org/v2/everything?q=marketing&language=en&sortBy=relevancy&from=${oneWeekAgo}&pageSize=10&page=${currentPageMarketing}&apiKey=e3ce35f448344649a84499d591b27761`
     let receivedNewsMarketing = (newsDataMarketing) => {
       document.querySelector(".articleMarketingText").innerHTML =''
 
@@ -105,7 +100,7 @@ document.querySelector(".buttonMoreAdvertising").onclick = readMoreClickAdvertis
 
   let currentPageFaang = 1
   let fetchNewsFaang = () => {
-    let urlFaang = `https://newsapi.org/v2/everything?language=en&q=facebook%20OR%20amazon%20OR%20apple%20OR%20netflix%20OR%20google%20&sortBy=relevancy&pageSize=10&page=${currentPageFaang}&apiKey=e3ce35f448344649a84499d591b27761`
+    let urlFaang = `https://newsapi.org/v2/everything?language=en&q=facebook%20OR%20amazon%20OR%20apple%20OR%20netflix%20OR%20google%20&sortBy=relevancy&from=${oneWeekAgo}&pageSize=10&page=${currentPageFaang}&apiKey=e3ce35f448344649a84499d591b27761`
     let receivedNewsFaang = (newsDataFaang) => {
       document.querySelector(".articleFaangText").innerHTML =''
 
@@ -145,7 +140,7 @@ document.querySelector(".buttonMoreAdvertising").onclick = readMoreClickAdvertis
 let currentPageStocks = 1
 let fetchNewsStocks = () => {
   // let urlStocks = `https://newsapi.org/v2/everything?q=stocks&language=en&sources=cnbc&sortBy=relevancy&pageSize=10&page=${currentPageStocks}&apiKey=e3ce35f448344649a84499d591b27761"`
-  let urlStocks = `https://newsapi.org/v2/everything?q=stocks&language=en&sources=cnbc&sortBy=relevancy&pageSize=10&page=${currentPageStocks}&apiKey=e3ce35f448344649a84499d591b27761`
+  let urlStocks = `https://newsapi.org/v2/everything?q=stocks&language=en&sources=cnbc&sortBy=relevancy&from=${oneWeekAgo}&pageSize=10&page=${currentPageStocks}&apiKey=e3ce35f448344649a84499d591b27761`
   let receivedNewsStocks = (newsDataStocks) => {
     document.querySelector(".articleStockText").innerHTML =''
 
