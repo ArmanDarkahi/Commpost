@@ -27,8 +27,8 @@ let fetchNewsAdvertising = () => {
       // Here we create and add html elements to our html file
       document.querySelector(".articleAdvertisingText").innerHTML +=
         `<div class="news">
-          <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
-          <a href="${article.url}">  <h3>${article.title}</h3></a>
+          <a target="_blank" href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
+          <a target="_blank" href="${article.url}">  <h3>${article.title}</h3></a>
           <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
           <p>${article.description}</p>
         </div>`
@@ -66,8 +66,8 @@ document.querySelector(".buttonMoreAdvertising").onclick = readMoreClickAdvertis
         // Here we create and add html elements to our html file
         document.querySelector(".articleMarketingText").innerHTML +=
           `<div class="news">
-            <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
-            <a href="${article.url}">  <h3>${article.title}</h3></a>
+            <a target="_blank" href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
+            <a target="_blank" href="${article.url}">  <h3>${article.title}</h3></a>
             <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
             <p>${article.description}</p>
           </div>`
@@ -109,8 +109,8 @@ document.querySelector(".buttonMoreAdvertising").onclick = readMoreClickAdvertis
         // Here we create and add html elements to our html file
         document.querySelector(".articleFaangText").innerHTML +=
           `<div class="news">
-            <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
-            <a href="${article.url}">  <h3>${article.title}</h3></a>
+            <a target="_blank" href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
+            <a target="_blank" href="${article.url}">  <h3>${article.title}</h3></a>
             <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
             <p>${article.description}</p>
           </div>`
@@ -149,8 +149,8 @@ let fetchNewsStocks = () => {
       // Here we create and add html elements to our html file
       document.querySelector(".articleStockText").innerHTML +=
         `<div class="news">
-          <a href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
-          <a href="${article.url}">  <h3>${article.title}</h3></a>
+          <a target="_blank" href="${article.url}"><img src="${article.urlToImage}" alt=""></a>
+          <a target="_blank" href="${article.url}">  <h3>${article.title}</h3></a>
           <h4>${article.author} ${moment(article.publishedAt).format('MMMM Do YYYY, h:mm a')}</h4>
           <p>${article.description}</p>
         </div>`
